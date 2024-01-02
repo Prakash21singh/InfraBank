@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Rubik", sans-serif;
+  overflow: hidden;
+}
+:root {
+  font-size: 16px;
+}
+/* This is Welcome Page */
+.WelcomePage {
+  width: 100dvw;
+  height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s all;
+  /* display: none; */
+}
+body {
+  background-color: #f5eeee;
+}
+.welcomeHeading {
+  font-size: 4rem;
+}
+.welcomeHeading span {
+  color: rgb(8, 173, 71);
+  font-size: 4rem;
+}
+
+/* This is Create Account Section */
+
+.createAccountSection {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: 0.4s all;
+  /* display: none; */
+}
+.createAccountSection h1 {
+  font-size: 3rem;
+  margin: 30px 30px 10px 30px;
+  text-align: center;
+}
+.createAccountSection h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.createAccountSection h1 span {
+  color: rgb(8, 173, 71);
+}
+.formContainer {
+  position: relative;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.createAccountForm {
+  background: white;
+  width: 90%;
+  margin: auto;
+  padding: 30px 10px 30px 30px;
+  border-radius: 9px;
+  box-shadow: 10px 10px 30px rgba(214, 208, 208, 0.275),
+    inset -10px -10px 30px white;
+  flex-direction: column;
+  display: flex;
+}
+.createAccountForm label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+.createAccountForm input {
+  padding: 14px;
+  outline: none;
+  border: none;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.144),
+    inset -10px -10px 30px rgba(255, 255, 255, 0.218);
+  border-radius: 10px;
+  margin: 5px;
+  width: 80%;
+  /* min-width: 200px; */
+  transition: 0.4s all;
+}
+.createAccountForm input:focus {
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.26),
+    inset -10px -10px 30px rgba(255, 255, 255, 0.218);
+}
+.submitAccountCreation {
+  align-self: flex-end;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding: 9px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  width: fit-content;
+  font-size: 1.1rem;
+  font-weight: 700;
+  background-color: rgb(8, 173, 71);
+}
+.submitAccountCreation:active {
+  background-color: rgb(70, 173, 131);
+}
+
+/* Pop Up Messages for credit and withdrawls */
+.createAccountMessage {
+  height: 40px;
+  background: #6eccaf;
+  width: max-content;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  position: absolute;
+  font-weight: 600;
+  left: 50%;
+  bottom: 15%;
+  transform: translateX(-50%);
+  z-index: 100;
+  transition: 0.4s all;
+  opacity: 0;
+  pointer-events: none;
+}
+.creditedAmount {
+  height: 60px;
+  width: 300px;
+  background-color: #f8de22;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-left: 19px;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.186);
+  transition: 0.5s all;
+  opacity: 0;
+  pointer-events: none;
+}
+.withdrawlAmount {
+  height: 60px;
+  width: 300px;
+  background-color: #94dd72;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 1.4rem;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  flex-direction: column;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.186);
+  /* display: none; */
+  transition: 0.5s all;
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+}
+.creditedAmount span {
+  font-size: 0.8rem;
+}
+.withdrawlAmount span {
+  font-size: 0.8rem;
+}
+
+/* Banking Portal  */
+.BankingPortal {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: 0.4s all;
+}
+.nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.nav img {
+  height: 80px;
+  margin-top: 13px;
+  margin-right: 20px;
+}
+.BankingContent {
+  flex: 1;
+  width: 90%;
+  margin: auto;
+  padding: 10px;
+  display: flex;
+  gap: 15px;
+}
+.BankTransaction {
+  width: 30%;
+  padding: 10px;
+}
+.BankPassbook {
+  flex: 1;
+  border-radius: 6px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.173),
+    inset -10px -10px 30px rgba(255, 255, 255, 0.249);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.BankingTransactionTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 15px;
+  font-weight: 500;
+}
+.TotalBalance {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.WithdrawlShows {
+  color: rgba(255, 0, 0, 0.784);
+  font-weight: 700;
+}
+.balanceShow {
+  color: rgb(22, 223, 62);
+  font-weight: 700;
+}
+.CreditShows {
+  color: rgb(255, 203, 3);
+  font-weight: 700;
+}
+
+.ShowMovements {
+  width: 60%;
+  /* flex: 1; */
+  margin: auto;
+  padding: 20px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 9px;
+  height: 380px;
+  /* border: 2px solid black; */
+}
+.inOutArea {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.movements {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.128),
+    inset 10px 10px 40px rgba(255, 255, 255, 0.219);
+  padding: 14px 8px 14px 8px;
+}
+.money_withdrawl {
+  background-color: rgba(255, 0, 0, 0.352);
+}
+.money_credited {
+  background-color: rgba(34, 139, 34, 0.345);
+}
+.BankTransaction {
+  border-radius: 6px;
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+.TransferMoney {
+  background: linear-gradient(to left top, rgb(255, 176, 3), rgb(255, 203, 3));
+  width: 100%;
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.192);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.TransferMoneyInfo {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+}
+.TransferMoney h3 {
+  position: absolute;
+  top: 0.8rem;
+  left: 3rem;
+}
+.TransferAmountBtn {
+  padding: 8px 20px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.TransferAmountBtn:active {
+  background: rgba(255, 255, 255, 0.4);
+}
+.TransferMoney input {
+  padding: 10px;
+  width: 50%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.29);
+  margin-bottom: 10px;
+}
+.sendMoney {
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+}
+.sendMoney:active {
+  background-color: #d7c432;
+}
+.RequestLoan {
+  background: linear-gradient(
+    to left top,
+    rgb(57, 179, 133),
+    rgb(155, 225, 93)
+  );
+  width: 100%;
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.113);
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.RequestLoanInfo {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  align-items: center;
+  justify-content: center;
+}
+.items {
+  width: 100%;
+  text-wrap: nowrap;
+}
+.RequestLoan h3 {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+}
+#RequestLoanMoney {
+  width: 70%;
+  padding: 10px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+  margin-bottom: 10px;
+}
+.RequestMoneyButton {
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 7px;
+  outline: none;
+  border: none;
+}
+.RequestMoneyButton:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+.CloseAccount {
+  background: linear-gradient(to left top, rgb(229, 42, 90), rgb(255, 88, 95));
+  width: 100%;
+  flex: 1;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.148);
+}
+.CloseAccount h3 {
+  margin-left: 3rem;
+  margin-top: 0.6rem;
+}
+.CloseAccountInfo {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 10px;
+}
+.CloseAccountInfo input {
+  width: 60%;
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background: rgba(255, 255, 255, 0.4);
+}
+.CloseAccountButton {
+  padding: 7px 20px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+}
+.CloseAccountButton:active {
+  background: rgba(255, 255, 255, 0.5);
+}
+.minusMoney {
+  color: red;
+}

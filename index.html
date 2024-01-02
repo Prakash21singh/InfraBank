@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InfraBank</title>
+    <link rel="shortcut icon" href="./Images/logo.svg" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&family=Rubik&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
+  </head>
+  <body>
+    <!-- Welcome Page to Welcome Our Clients -->
+    <div class="WelcomePage">
+      <img src="/Images/logo.svg" alt="" style="height: 100px" />
+      <h2 class="welcomeHeading">Infra-<span>Bank</span></h2>
+    </div>
+
+    <!-- Create Your Account -->
+    <div class="createAccountSection">
+      <h1>Create Your <span>Account</span></h1>
+      <h3>By Simply Sign Up In Our Bank</h3>
+      <div class="formContainer">
+        <form action="#" class="createAccountForm">
+          <label for="fname">UserName:-</label>
+          <input type="text" placeholder="username" id="fname" />
+          <br />
+          <label for="sname">Lastname:-</label>
+          <input type="text" placeholder="SecondName" id="sname" />
+          <br />
+          <label for="num">Number:-</label>
+          <input
+            type="number"
+            name="num"
+            id="num"
+            placeholder="Enter Your Number" />
+          <br />
+          <label for="accountPin">Set Pin:-</label>
+          <input type="number" id="accountPin" placeholder="Set Your Pin" />
+          <button class="submitAccountCreation">Sumbit</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Pop Up Messages For Credits and Withdrawls -->
+    <div class="createAccountMessage">
+      Thank You For Creating Your Bank Account in Infra-Bank
+    </div>
+    <div class="creditedAmount">
+      <p>Amount Credited 700</p>
+      <span>Hides in 3 seconds</span>
+    </div>
+    <div class="withdrawlAmount">
+      <!-- <p>Amount Withdraw 1000</p>
+      <span>Hides in 3 seconds</span> -->
+    </div>
+
+    <div class="BankingPortal">
+      <div class="nav">
+        <img src="./Images/logo.svg" alt="" />
+        <h2>Welcome To The Infra-<span style="color: #0e9067">Bank</span></h2>
+      </div>
+      <div class="BankingContent">
+        <div class="BankPassbook">
+          <!-- Show Total Transactions -->
+          <div class="BankingTransactionTitle">
+            <div class="TotalBalance">
+              Current Balance:-
+              <br /><span class="balanceShow">$1000</span>
+            </div>
+          </div>
+          <!-- Show Movements -->
+          <div class="ShowMovements"></div>
+          <div class="inOutArea">
+            <div class="TotalWithdrawls">
+              Total Withdrawls:-
+              <br />
+              <span class="WithdrawlShows">$1000</span>
+            </div>
+            <div class="TotalCredit">
+              Total Credits:-
+              <br />
+              <span class="CreditShows">$1000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="BankTransaction">
+          <div class="TransferMoney">
+            <h3>Credit Money</h3>
+            <div class="TransferMoneyInfo">
+              <div class="items">
+                <input type="number" id="TransferAmount" />
+              </div>
+              <div class="items">
+                <button class="TransferAmountBtn">&rarr;</button>
+              </div>
+              <div class="items"></div>
+              <div class="items">Transfer Amount</div>
+            </div>
+          </div>
+          <div class="RequestLoan">
+            <h3>Withdrawls</h3>
+            <div class="RequestLoanInfo">
+              <div class="items">
+                <input type="number" id="RequestLoanMoney" />
+              </div>
+              <div class="items"></div>
+              <div class="items">
+                <button class="RequestMoneyButton">&rarr;</button>
+              </div>
+              <div class="items">Withdrawl Amount</div>
+              <div class="items"></div>
+              <div class="items"></div>
+            </div>
+          </div>
+          <div class="CloseAccount">
+            <h3>Close Account</h3>
+            <div class="CloseAccountInfo">
+              <div class="items">
+                <input type="text" id="Logoutusername" autocomplete="off" />
+              </div>
+              <div class="items">
+                <input type="number" id="LogoutuserPin" autocomplete="off" />
+              </div>
+              <div class="items">
+                <button class="CloseAccountButton">&rarr;</button>
+              </div>
+              <div class="items">
+                <label for="username">Username</label>
+              </div>
+              <div class="items">
+                <label for="userPin"> User Pin</label>
+              </div>
+              <div class="items"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!--   -->
